@@ -1,6 +1,6 @@
 #Enzo Kail Vizalli
 #IFRO Calama 1°B INFO
-
+q0=0
 
 #Questão 1
 
@@ -24,17 +24,26 @@ print(max(q2l))
 exit()'''
 
 
+#Questão 3
 
 q3 = 0
+q3l = [0]
+for q3a in range(5):
+    q3i = str(input("Mim dê um nome: "))
+    q3l.append(q3i)
+for q3l in range(1, 6):
+    print("{}. {}".format(q3l.index(q3i),q3l))
+
+
+
 q4 = 0
 q5 = 0
 q6 = 0
 q7 = 0
 q8 = 0
 
-
 q = int(input("Escolha qual questão quer fazer: "))
-questões = [q1, q2, q3, q4, q5, q6, q7, q8]
-for q in questões:
-    exec(questões[0:q:0])
+print(q)
+questões = [q0, q1, q2, q3, q4, q5, q6, q7, q8]
+exec(questões[q])
 
